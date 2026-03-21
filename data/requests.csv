@@ -1,5 +1,0 @@
-﻿request_id,lab_node_id,demand,ready_time,due_time,service_time,max_transport_time
-1,1,14,30,90,5,120
-2,2,10,45,100,5,150
-3,3,18,20,80,5,120
-4,4,9,35,70,5,75

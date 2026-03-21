@@ -1,0 +1,3 @@
+﻿vehicle_id,start_node,end_node,capacity,shift_start,shift_end
+1,0,0,9999,0,300
+2,0,0,9999,0,300

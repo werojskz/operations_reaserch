@@ -1,0 +1,42 @@
+﻿node_id,name,address,type,lat,lon,osmnx_node
+0,Central Hospital,"Borowska 213, Wroclaw, Poland",hospital,51.0745091,17.0310205,305067543
+1,Lab 1,"pl. Grunwaldzki 18-20, Wroclaw, Poland",lab,51.1114384,17.058332,1989659836
+2,Lab 2,"Plac Hirszfelda 16/17, Wroclaw, Poland",lab,51.0947123,17.014853,263703023
+3,Lab 3,"Św. Macieja 8, Wroclaw, Poland",lab,51.1201557,17.036893,244430836
+4,Lab 4,"Bierutowska 17, Wroclaw, Poland",lab,51.1483793,17.1180107,366131801
+5,Lab 5,"Bonczyka 20, Wroclaw, Poland",lab,51.1368202,17.0382538,324780407
+6,Lab 6,"Budziszyńska 62a, Wroclaw, Poland",lab,51.1126,16.9593353,246806334
+7,Lab 7,"Buforowa 75, Wroclaw, Poland",lab,51.0566047,17.056557,6910649762
+8,Lab 8,"Canaletta 4, Wroclaw, Poland",lab,51.1043068,17.1158013,2810900511
+9,Lab 9,"Chorwacka 41c, Wroclaw, Poland",lab,51.138894,17.0258008,348018626
+10,Lab 10,"Dobrzyńska 21/23, Wroclaw, Poland",lab,51.1069722,17.0462103,304383392
+11,Lab 11,"Dokerska 2a, Wroclaw, Poland",lab,51.1379094,16.9652863,1494281128
+12,Lab 12,"Gwarna 6a, Wroclaw, Poland",lab,51.100954,17.0382867,185460482
+13,Lab 13,"Horbaczewskiego 35, Wroclaw, Poland",lab,51.1248453,16.9713914,2680825123
+14,Lab 14,"Ibn Siny Awicenny 53, Wroclaw, Poland",lab,51.0802712,16.9546089,9356765677
+15,Lab 15,"Jaracza 75h, Wroclaw, Poland",lab,51.1261167,17.0586097,364829983
+16,Lab 16,"Kasprowicza 9a, Wroclaw, Poland",lab,51.1357905,17.0381908,252016958
+17,Lab 17,"Kiełczowska 70, Wroclaw, Poland",lab,51.1465327,17.135202,4908059409
+18,Lab 18,"Krzycka 94, Wroclaw, Poland",lab,51.0666174,16.9885086,278126975
+19,Lab 19,"Mińska 5, Wroclaw, Poland",lab,51.0995431,16.9414301,3632716600
+20,Lab 20,"Młodych Techników 7, Wroclaw, Poland",lab,51.1136467,17.0125389,265656543
+21,Lab 21,"Olszewskiego 21, Wroclaw, Poland",lab,51.1026574,17.0966575,309274773
+22,Lab 22,"Opolska 131, Wroclaw, Poland",lab,51.0718031,17.0896356,370441879
+23,Lab 23,"Ostrowskiego 3, Wroclaw, Poland",lab,51.0949628,16.9775254,151334591
+24,Lab 24,"Eluarda 7, Wroclaw, Poland",lab,51.1469381,16.8664066,443422415
+25,Lab 25,"Pereca 20/1a, Wroclaw, Poland",lab,51.0986084,17.006909,173944821
+26,Lab 26,"Piłsudskiego 4a, Wroclaw, Poland",lab,51.10433,17.0228355,167074908
+27,Lab 27,"Popowicka 67, Wroclaw, Poland",lab,51.1285056,16.9905308,7026659258
+28,Lab 28,"Powstańców Śląskich 168, Wroclaw, Poland",lab,51.084135,17.0111747,178983828
+29,Lab 29,"Powstańców Śląskich 60, Wroclaw, Poland",lab,51.0962404,17.0244437,243879834
+30,Lab 30,"Rajska 71, Wroclaw, Poland",lab,51.1416345,16.8981872,470958139
+31,Lab 31,"Sienkiewicza 110, Wroclaw, Poland",lab,51.1160912,17.0602817,185460843
+32,Lab 32,"Strachocińska 159, Wroclaw, Poland",lab,51.1023977,17.1555389,392062833
+33,Lab 33,"Swojczycka 69, Wroclaw, Poland",lab,51.1129736,17.1215822,4967385959
+34,Lab 34,"Traugutta 142, Wroclaw, Poland",lab,51.0975152,17.0562809,243863294
+35,Lab 35,"Trawowa 73, Wroclaw, Poland",lab,51.1001953,16.9526309,1919878125
+36,Lab 36,"Warszawska 2, Wroclaw, Poland",lab,51.0637986,17.0799235,311408431
+37,Lab 37,"Weigla 12, Wroclaw, Poland",lab,51.0763938,17.0227629,1653314281
+38,Lab 38,"Zakładowa 11h, Wroclaw, Poland",lab,51.1299249,17.0437041,2608266932
+39,Lab 39,"Żelazna 34, Wroclaw, Poland",lab,51.096975,17.0081703,3886160177
+40,Lab 40,"Zwycięska 41, Wroclaw, Poland",lab,51.0594015,17.0119751,5659460074

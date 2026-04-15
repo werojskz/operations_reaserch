@@ -98,7 +98,9 @@ def visualize_routes(
         3: "orange",
         4: "darkred",
         5: "cadetblue",
-        6: "yellow"
+        6: "yellow",
+        7: "brown",
+        8: "magenta"
     }
 
     # ============================================================

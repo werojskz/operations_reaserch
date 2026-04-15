@@ -428,6 +428,35 @@ def solve_vrp(nodes_df, requests_df, vehicles_df, time_matrix):
     manual_travel_sum = selected_arcs_df["travel_time_min"].sum()
 
     # ============================================================
+    # 18E. SUMA CZASÓW PRZEJAZDU PER VEHICLE (SUMA ŁUKÓW)
+    # ============================================================
+
+    travel_time_summary = (
+        selected_arcs_df
+        .groupby("vehicle_id")["travel_time_min"]
+        .sum()
+        .reset_index()
+        .rename(columns={"travel_time_min": "total_travel_time"})
+    )
+
+    ################ total travel time
+    total_route_time_rows = []
+
+    for k in vehicles:
+        start_t = value(t[(k, start_node)])
+        end_t = value(t[(k, end_node)])
+        total_duration = end_t - start_t
+
+        total_route_time_rows.append({
+            "vehicle_id": k,
+            "start_time": start_t,
+            "end_time": end_t,
+            "total_route_duration": total_duration
+        })
+
+    total_route_time_df = pd.DataFrame(total_route_time_rows)
+
+    # ============================================================
     # 19. ZWROT WYNIKÓW
     # ============================================================
 
@@ -442,5 +471,7 @@ def solve_vrp(nodes_df, requests_df, vehicles_df, time_matrix):
         "lifetime": lifetime_df,
         "vehicle_usage": vehicle_usage_df,      # NOWE
         "node_times": node_times_df,            # NOWE
-        "manual_travel_sum": manual_travel_sum  # OPCJONALNE
+        "manual_travel_sum": manual_travel_sum,
+        "travel_time_summary": travel_time_summary,
+        "total_route_time": total_route_time_df,  # OPCJONALNE
     }

@@ -1,24 +1,24 @@
 ﻿node_id,name,address,type,lat,lon
-1,Lab 1,"pl. Grunwaldzki 18-20, Wroclaw, Poland",lab,51.1112459,17.0581247
+1,Lab 1,"pl. Grunwaldzki 18-20, Wroclaw, Poland",lab,51.1114384,17.058332
 2,Lab 2,"Plac Hirszfelda 16/17, Wroclaw, Poland",lab,51.0947123,17.014853
 3,Lab 3,"Św. Macieja 8, Wroclaw, Poland",lab,51.1201557,17.036893
 4,Lab 4,"Bierutowska 17, Wroclaw, Poland",lab,51.1483793,17.1180107
 5,Lab 5,"Bonczyka 20, Wroclaw, Poland",lab,51.1368202,17.0382538
-6,Lab 6,"Budziszyńska 62a, Wroclaw, Poland",lab,51.1125629,16.959331
+6,Lab 6,"Budziszyńska 62a, Wroclaw, Poland",lab,51.1126,16.9593353
 7,Lab 7,"Buforowa 75, Wroclaw, Poland",lab,51.0566047,17.056557
 8,Lab 8,"Canaletta 4, Wroclaw, Poland",lab,51.1043068,17.1158013
 9,Lab 9,"Chorwacka 41c, Wroclaw, Poland",lab,51.138894,17.0258008
 10,Lab 10,"Dobrzyńska 21/23, Wroclaw, Poland",lab,51.1069722,17.0462103
-11,Lab 11,"Dokerska 2a, Wroclaw, Poland",lab,51.1378454,16.9654009
+11,Lab 11,"Dokerska 2a, Wroclaw, Poland",lab,51.1379094,16.9652863
 12,Lab 12,"Gwarna 6a, Wroclaw, Poland",lab,51.100954,17.0382867
-13,Lab 13,"Horbaczewskiego 35, Wroclaw, Poland",lab,51.1247403,16.9711658
+13,Lab 13,"Horbaczewskiego 35, Wroclaw, Poland",lab,51.1248453,16.9713914
 14,Lab 14,"Ibn Siny Awicenny 53, Wroclaw, Poland",lab,51.0802712,16.9546089
 15,Lab 15,"Jaracza 75h, Wroclaw, Poland",lab,51.1261167,17.0586097
 16,Lab 16,"Kasprowicza 9a, Wroclaw, Poland",lab,51.1357905,17.0381908
 17,Lab 17,"Kiełczowska 70, Wroclaw, Poland",lab,51.1465327,17.135202
 18,Lab 18,"Krzycka 94, Wroclaw, Poland",lab,51.0666174,16.9885086
-19,Lab 19,"Mińska 5, Wroclaw, Poland",lab,51.0995294,16.9416025
-20,Lab 20,"Młodych Techników 7, Wroclaw, Poland",lab,51.1139221,17.0124251
+19,Lab 19,"Mińska 5, Wroclaw, Poland",lab,51.0995431,16.9414301
+20,Lab 20,"Młodych Techników 7, Wroclaw, Poland",lab,51.1136467,17.0125389
 21,Lab 21,"Olszewskiego 21, Wroclaw, Poland",lab,51.1026574,17.0966575
 22,Lab 22,"Opolska 131, Wroclaw, Poland",lab,51.0718031,17.0896356
 23,Lab 23,"Ostrowskiego 3, Wroclaw, Poland",lab,51.0949628,16.9775254

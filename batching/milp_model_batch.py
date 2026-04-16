@@ -288,29 +288,20 @@ def solve_vrp(nodes_df, requests_df, vehicles_df, time_matrix, batch_size):
                     t[(k, j)] >= t[(k, i)] + serv_i + travel_cost[(i, j)]
                     - M * (1 - x[(k, i, j)])
                 )
+
+
+
     # ============================================================
-    # 12B. PROPAGACJA ŁADUNKU (CAPACITY CONSTRAINTS)
+    # 12B. POPRAWIONA PROPAGACJA ŁADUNKU (BATCHING)
     # ============================================================
 
-    # start: pojazd pusty
     for k in vehicles:
+        # start: pojazd pusty
         model += load[(k, start_node)] == 0
 
-    # ładunek nie może przekroczyć pojemności
-    for k in vehicles:
-        for i in all_nodes:
-            model += load[(k, i)] <= capacity_batches[k]
-
-    # ładunek na końcu trasy też nie może przekroczyć pojemności
-    for k in vehicles:
-        model += load[(k, end_node)] <= capacity_batches[k]
-
-
-    ############# batching
-    # propagacja ładunku po łukach
-    for k in vehicles:
         for i in all_nodes:
             for j in all_nodes:
+
                 if i == j:
                     continue
                 if (i, j) not in travel_cost:
@@ -320,13 +311,34 @@ def solve_vrp(nodes_df, requests_df, vehicles_df, time_matrix, batch_size):
                 if i == end_node:
                     continue
 
+                # batch demand tylko dla labów
                 demand_j = demand_batches.get(j, 0)
 
+                # 1) Jeśli jedziemy i→j, to load[j] >= load[i] + demand_j
                 model += (
                     load[(k, j)]
                     >= load[(k, i)] + demand_j
                     - M * (1 - x[(k, i, j)])
                 )
+
+                # 2) Jeśli jedziemy i→j, to load[j] <= load[i] + demand_j
+                model += (
+                    load[(k, j)]
+                    <= load[(k, i)] + demand_j
+                    + M * (1 - x[(k, i, j)])
+                )
+
+                # 3) Monotoniczność — load nie może spaść
+                model += (
+                    load[(k, j)]
+                    >= load[(k, i)]
+                    - M * (1 - x[(k, i, j)])
+                )
+
+        # ładunek nie może przekroczyć pojemności
+        for i in all_nodes:
+            model += load[(k, i)] <= capacity_batches[k]
+
 
 
         # 12C. WYMUSZENIE MIEJSCA NA KOLEJNY BATCH

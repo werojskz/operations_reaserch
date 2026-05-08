@@ -1,0 +1,12 @@
+results/
+cache/
+batching/results_batch/
+batching/wroclaw_map_output_batch/
+batching/__pycache__/
+__pycache__/
+wroclaw_map_output/wroclaw_roads_points.html
+wroclaw_map_output/milp_routes_map.html
+*.csv
+*.html
+*.json
+*.graphml

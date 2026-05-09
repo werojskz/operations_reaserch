@@ -1,0 +1,29 @@
+
+    <html>
+    <head>
+        <title>Transport Optimization Results</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            table { border-collapse: collapse; width: 100%; max-width: 1000px; }
+            th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+            th { background-color: #f2f2f2; }
+        </style>
+    </head>
+    <body>
+        <h2>Optimization Scenario Results</h2>
+        <p>S1 Vehicles: 5 | S2 Local Vehicles: 4 (Plus 1 Global Hub Vehicle)</p>
+        <table>
+            <tr>
+                <th>Scenario</th>
+                <th>Service Level (%)</th>
+                <th>Delivered On Time</th>
+                <th>Total Requests</th>
+                <th>Total Time (min)</th>
+                <th>Total Dist (km)</th>
+                <th>Z Score (Del/km)</th>
+            </tr>
+            <tr><td><b>S1 - Dynamic Greedy</b></td><td >64.29</td><td >45</td><td>70</td><td >2025.54</td><td >1354.09</td><td >0.0332</td></tr><tr><td><b>S2 - Dynamic Hub & Cluster</b></td><td style="background:#d4edda;font-weight:bold">78.57</td><td style="background:#d4edda;font-weight:bold">55</td><td>70</td><td >1730.71</td><td >1106.79</td><td >0.0497</td></tr><tr><td><b>S3 - Dynamic OR-Tools</b></td><td >77.14</td><td >54</td><td>70</td><td style="background:#d4edda;font-weight:bold">1543.64</td><td style="background:#d4edda;font-weight:bold">952.84</td><td style="background:#d4edda;font-weight:bold">0.0567</td></tr>
+        </table>
+    </body>
+    </html>
+    
